@@ -1,0 +1,30 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/navbar.css' %}" />
+
+
+<div class="topbar">
+    <div class="navbar">
+        <a class="active" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        {% if request.user.is_authenticated %}
+        <a href="">Login</a>
+        {% else %}
+        <a href="">Logout</a>
+        {% endif %}
+    </div>
+
+
+
+    <div class="topicsbar">
+        <a href="" class="active">Health and Fitness</a>
+        <a href="">Physics</a>
+        <a href="">Geometry</a>
+        <a href="">Finance</a>
+        <a href="">Probability</a>
+        <a href="">Statistics</a>
+        <a href="">Trigonometry</a>
+        <a href="">Others</a>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #008F77;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #F5F5F5;
+}
+
+.navbar a.active {
+    background-color: #008F77;
+    color: white;
+}
+
+.navbar a.logo {
+    font-size: 1.5em;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .navbar-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.topicsbar {
+
+    background-color: white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.topicsbar a {
+    color: #00B899;
+    font-size: 18px; /* Adjust the value as needed */
+    line-height: 40px; /* Center the text vertically */
+    text-decoration: none;
+}
+
+/* Optional: Add padding or margin to the navbar items */
+.topicsbar {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+.topicsbar a.active {
+    color: white;
+    background-color: #00B899;
+}
+
+.topicsbar a:hover {
+    background-color: #F5F5F5;
+}
